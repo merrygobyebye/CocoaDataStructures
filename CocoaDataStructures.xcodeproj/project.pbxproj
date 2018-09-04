@@ -10,6 +10,7 @@
 		07AADA97213DCF38003B2B11 /* CocoaDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */; };
 		07AADA9C213DCF38003B2B11 /* CocoaDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AADA9B213DCF38003B2B11 /* CocoaDataStructuresTests.swift */; };
 		07AADA9E213DCF38003B2B11 /* CocoaDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		07AADA96213DCF38003B2B11 /* CocoaDataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaDataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AADA9B213DCF38003B2B11 /* CocoaDataStructuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaDataStructuresTests.swift; sourceTree = "<group>"; };
 		07AADA9D213DCF38003B2B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeapPriorityQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */,
+				07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */,
 				07AADA91213DCF38003B2B11 /* Info.plist */,
 			);
 			path = CocoaDataStructures;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					07AADA8C213DCF38003B2B11 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					07AADA95213DCF38003B2B11 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		07AADAA2213DCF38003B2B11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.merrygobyebye.CocoaDataStructures;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		07AADAA3213DCF38003B2B11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		07AADAA5213DCF38003B2B11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 243HHSNTR5;
 				INFOPLIST_FILE = CocoaDataStructuresTests/Info.plist;
@@ -407,6 +416,7 @@
 		07AADAA6213DCF38003B2B11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 243HHSNTR5;
 				INFOPLIST_FILE = CocoaDataStructuresTests/Info.plist;

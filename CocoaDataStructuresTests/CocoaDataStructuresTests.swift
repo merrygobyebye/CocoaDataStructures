@@ -11,26 +11,17 @@ import XCTest
 
 class CocoaDataStructuresTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testHeapPriorityQueue() {
+        let pq = MinHeapPriorityQueue<Int>()
+        pq.add(4)
+        pq.add(6)
+        pq.add(2)
+        pq.add(3)
+        pq.add(1)
+        pq.add(5)
+        
+        let expected = [1, 2, 3, 4, 5, 6]
+        let actual = [pq.removeMin(), pq.removeMin(), pq.removeMin(), pq.removeMin(), pq.removeMin(), pq.removeMin()]
+        XCTAssertEqual(expected, actual)
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

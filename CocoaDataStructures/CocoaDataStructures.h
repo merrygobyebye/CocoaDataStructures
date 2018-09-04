@@ -6,7 +6,7 @@
 //  Copyright © 2018 merrygobyebye. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 //! Project version number for CocoaDataStructures.
 FOUNDATION_EXPORT double CocoaDataStructuresVersionNumber;
@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double CocoaDataStructuresVersionNumber;
 FOUNDATION_EXPORT const unsigned char CocoaDataStructuresVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CocoaDataStructures/PublicHeader.h>
-
-
