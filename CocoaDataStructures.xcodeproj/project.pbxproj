@@ -11,6 +11,7 @@
 		07AADA9C213DCF38003B2B11 /* CocoaDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AADA9B213DCF38003B2B11 /* CocoaDataStructuresTests.swift */; };
 		07AADA9E213DCF38003B2B11 /* CocoaDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */; };
+		07BC758021991BD200CA372A /* ArrayStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BC757F21991BD200CA372A /* ArrayStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		07AADA9B213DCF38003B2B11 /* CocoaDataStructuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaDataStructuresTests.swift; sourceTree = "<group>"; };
 		07AADA9D213DCF38003B2B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeapPriorityQueue.swift; sourceTree = "<group>"; };
+		07BC757F21991BD200CA372A /* ArrayStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */,
 				07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */,
+				07BC757F21991BD200CA372A /* ArrayStack.swift */,
 				07AADA91213DCF38003B2B11 /* Info.plist */,
 			);
 			path = CocoaDataStructures;
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BC758021991BD200CA372A /* ArrayStack.swift in Sources */,
 				07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
