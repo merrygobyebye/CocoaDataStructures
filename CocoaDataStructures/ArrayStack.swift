@@ -10,36 +10,40 @@ import UIKit
 
 class ArrayStack<T>: NSObject where T: Comparable {
     
-    var array: [T] = []
+    private var stack: [T] = []
+    private var maxArray: [Int] = []
+    private var _max: T?
+    private var _count: Int = 0
     
     func push(_ obj: T) {
-        array.append(obj)
+        stack.append(obj)
+        _count += 1
+        
+        if _max == nil || obj > _max! {
+            _max = obj
+            maxArray.append(_count - 1)
+        } else {
+            maxArray.append(_count - 2)
+        }
     }
     
     func pop() -> T? {
-        return array.isEmpty ? nil : array.removeLast()
+        guard !stack.isEmpty else { return nil }
+        
+        maxArray.removeLast()
+        _count -= 1
+        return stack.removeLast()
     }
     
     func peek() -> T? {
-        return array.last
+        return stack.last
+    }
+    
+    func count() -> Int {
+        return _count
     }
     
     func max() -> T? {
-        guard var max = array.first else {
-            return nil
-        }
-        
-        guard array.count > 1 else {
-            return max
-        }
-        
-        for i in 1...array.count - 1 {
-            let candidate = array[i]
-            if candidate > max {
-                max = candidate
-            }
-        }
-        
-        return max
+        return _max
     }
 }
