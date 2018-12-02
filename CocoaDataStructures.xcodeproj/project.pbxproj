@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0705D5D121A65A9500BF9465 /* ReversePolishNotationEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5D021A65A9500BF9465 /* ReversePolishNotationEvaluator.swift */; };
 		07AADA97213DCF38003B2B11 /* CocoaDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */; };
 		07AADA9C213DCF38003B2B11 /* CocoaDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AADA9B213DCF38003B2B11 /* CocoaDataStructuresTests.swift */; };
 		07AADA9E213DCF38003B2B11 /* CocoaDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0705D5D021A65A9500BF9465 /* ReversePolishNotationEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversePolishNotationEvaluator.swift; sourceTree = "<group>"; };
 		07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaDataStructures.h; sourceTree = "<group>"; };
 		07AADA91213DCF38003B2B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */,
 				07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */,
 				07BC757F21991BD200CA372A /* ArrayStack.swift */,
+				0705D5D021A65A9500BF9465 /* ReversePolishNotationEvaluator.swift */,
 				07AADA91213DCF38003B2B11 /* Info.plist */,
 			);
 			path = CocoaDataStructures;
@@ -203,6 +206,7 @@
 			files = (
 				07BC758021991BD200CA372A /* ArrayStack.swift in Sources */,
 				07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */,
+				0705D5D121A65A9500BF9465 /* ReversePolishNotationEvaluator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

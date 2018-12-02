@@ -77,4 +77,14 @@ class CocoaDataStructuresTests: XCTestCase {
         XCTAssertNil(stack.peek())
         XCTAssertNil(stack.pop())
     }
+    
+    func testReversePolishNotationEvaluator() {
+        var stringRepresentation = "invalid"
+        var evaluator = ReversePolishNotationEvaluator(stringRepresentation: stringRepresentation, separator: ",")
+        XCTAssertThrowsError(try evaluator.evaluate())
+        
+        stringRepresentation = "3,4,5,*,-"
+        evaluator = ReversePolishNotationEvaluator(stringRepresentation: stringRepresentation, separator: ",")
+        XCTAssertEqual(try evaluator.evaluate(), -17)
+    }
 }
