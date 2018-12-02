@@ -11,6 +11,8 @@
 		0705D5D821B465E500BF9465 /* MinHeapPriorityQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5D721B465E500BF9465 /* MinHeapPriorityQueueTest.swift */; };
 		0705D5DA21B4664500BF9465 /* ArrayStackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5D921B4664500BF9465 /* ArrayStackTest.swift */; };
 		0705D5DD21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5DC21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift */; };
+		0705D5DF21B46B3600BF9465 /* WellFormedParenthesesEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5DE21B46B3600BF9465 /* WellFormedParenthesesEvaluator.swift */; };
+		0705D5E121B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5E021B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift */; };
 		07AADA97213DCF38003B2B11 /* CocoaDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */; };
 		07AADA9E213DCF38003B2B11 /* CocoaDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */; };
@@ -32,6 +34,8 @@
 		0705D5D721B465E500BF9465 /* MinHeapPriorityQueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeapPriorityQueueTest.swift; sourceTree = "<group>"; };
 		0705D5D921B4664500BF9465 /* ArrayStackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayStackTest.swift; sourceTree = "<group>"; };
 		0705D5DC21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversePolishNotationEvaluatorTest.swift; sourceTree = "<group>"; };
+		0705D5DE21B46B3600BF9465 /* WellFormedParenthesesEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellFormedParenthesesEvaluator.swift; sourceTree = "<group>"; };
+		0705D5E021B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellFormedParenthesesEvaluatorTest.swift; sourceTree = "<group>"; };
 		07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaDataStructures.h; sourceTree = "<group>"; };
 		07AADA91213DCF38003B2B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				0705D5D021A65A9500BF9465 /* ReversePolishNotationEvaluator.swift */,
+				0705D5DE21B46B3600BF9465 /* WellFormedParenthesesEvaluator.swift */,
 			);
 			path = Applications;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				0705D5DC21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift */,
+				0705D5E021B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift */,
 			);
 			path = Applications;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07BC758021991BD200CA372A /* ArrayStack.swift in Sources */,
+				0705D5DF21B46B3600BF9465 /* WellFormedParenthesesEvaluator.swift in Sources */,
 				07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */,
 				0705D5D121A65A9500BF9465 /* ReversePolishNotationEvaluator.swift in Sources */,
 			);
@@ -270,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0705D5D821B465E500BF9465 /* MinHeapPriorityQueueTest.swift in Sources */,
+				0705D5E121B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift in Sources */,
 				0705D5DD21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift in Sources */,
 				0705D5DA21B4664500BF9465 /* ArrayStackTest.swift in Sources */,
 			);

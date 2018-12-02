@@ -19,7 +19,7 @@ enum ReversePolishNotationEvaluationError: Error {
     case InvalidSyntax
 }
 
-class ReversePolishNotationEvaluator: NSObject {
+class ReversePolishNotationEvaluator {
     
     private(set) var stringRepresentation: String
     private(set) var separator: Character
@@ -29,7 +29,6 @@ class ReversePolishNotationEvaluator: NSObject {
     init(stringRepresentation: String, separator: Character) {
         self.stringRepresentation = stringRepresentation
         self.separator = separator
-        super.init()
     }
     
     public func evaluate() throws -> Double {

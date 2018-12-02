@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ArrayStack<T>: NSObject where T: Comparable {
+class ArrayStack<T> where T: Comparable {
     
     private var stack: [T] = []
     private var maxArray: [Int] = []

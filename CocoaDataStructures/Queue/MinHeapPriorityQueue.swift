@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MinHeapPriorityQueue<T>: NSObject where T: Comparable {
+class MinHeapPriorityQueue<T> where T: Comparable {
     
     private var data: [T] = []
     
