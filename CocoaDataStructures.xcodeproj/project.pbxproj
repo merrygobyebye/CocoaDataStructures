@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0705D5D121A65A9500BF9465 /* ReversePolishNotationEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5D021A65A9500BF9465 /* ReversePolishNotationEvaluator.swift */; };
+		0705D5D821B465E500BF9465 /* MinHeapPriorityQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5D721B465E500BF9465 /* MinHeapPriorityQueueTest.swift */; };
+		0705D5DA21B4664500BF9465 /* ArrayStackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5D921B4664500BF9465 /* ArrayStackTest.swift */; };
+		0705D5DD21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5DC21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift */; };
 		07AADA97213DCF38003B2B11 /* CocoaDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */; };
-		07AADA9C213DCF38003B2B11 /* CocoaDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AADA9B213DCF38003B2B11 /* CocoaDataStructuresTests.swift */; };
 		07AADA9E213DCF38003B2B11 /* CocoaDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */; };
 		07BC758021991BD200CA372A /* ArrayStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BC757F21991BD200CA372A /* ArrayStack.swift */; };
@@ -27,11 +29,13 @@
 
 /* Begin PBXFileReference section */
 		0705D5D021A65A9500BF9465 /* ReversePolishNotationEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversePolishNotationEvaluator.swift; sourceTree = "<group>"; };
+		0705D5D721B465E500BF9465 /* MinHeapPriorityQueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeapPriorityQueueTest.swift; sourceTree = "<group>"; };
+		0705D5D921B4664500BF9465 /* ArrayStackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayStackTest.swift; sourceTree = "<group>"; };
+		0705D5DC21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversePolishNotationEvaluatorTest.swift; sourceTree = "<group>"; };
 		07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaDataStructures.h; sourceTree = "<group>"; };
 		07AADA91213DCF38003B2B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AADA96213DCF38003B2B11 /* CocoaDataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaDataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07AADA9B213DCF38003B2B11 /* CocoaDataStructuresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaDataStructuresTests.swift; sourceTree = "<group>"; };
 		07AADA9D213DCF38003B2B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeapPriorityQueue.swift; sourceTree = "<group>"; };
 		07BC757F21991BD200CA372A /* ArrayStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayStack.swift; sourceTree = "<group>"; };
@@ -56,6 +60,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0705D5D221B4653200BF9465 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				0705D5D021A65A9500BF9465 /* ReversePolishNotationEvaluator.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		0705D5D321B4654F00BF9465 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				07BC757F21991BD200CA372A /* ArrayStack.swift */,
+				0705D5D221B4653200BF9465 /* Applications */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		0705D5D421B4657600BF9465 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		0705D5D521B465B000BF9465 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				0705D5D721B465E500BF9465 /* MinHeapPriorityQueueTest.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		0705D5D621B465B800BF9465 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				0705D5D921B4664500BF9465 /* ArrayStackTest.swift */,
+				0705D5DB21B4667600BF9465 /* Applications */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		0705D5DB21B4667600BF9465 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				0705D5DC21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
 		07AADA83213DCF38003B2B11 = {
 			isa = PBXGroup;
 			children = (
@@ -78,9 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */,
-				07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */,
-				07BC757F21991BD200CA372A /* ArrayStack.swift */,
-				0705D5D021A65A9500BF9465 /* ReversePolishNotationEvaluator.swift */,
+				0705D5D421B4657600BF9465 /* Queue */,
+				0705D5D321B4654F00BF9465 /* Stack */,
 				07AADA91213DCF38003B2B11 /* Info.plist */,
 			);
 			path = CocoaDataStructures;
@@ -89,7 +142,8 @@
 		07AADA9A213DCF38003B2B11 /* CocoaDataStructuresTests */ = {
 			isa = PBXGroup;
 			children = (
-				07AADA9B213DCF38003B2B11 /* CocoaDataStructuresTests.swift */,
+				0705D5D521B465B000BF9465 /* Queue */,
+				0705D5D621B465B800BF9465 /* Stack */,
 				07AADA9D213DCF38003B2B11 /* Info.plist */,
 			);
 			path = CocoaDataStructuresTests;
@@ -215,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07AADA9C213DCF38003B2B11 /* CocoaDataStructuresTests.swift in Sources */,
+				0705D5D821B465E500BF9465 /* MinHeapPriorityQueueTest.swift in Sources */,
+				0705D5DD21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift in Sources */,
+				0705D5DA21B4664500BF9465 /* ArrayStackTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
