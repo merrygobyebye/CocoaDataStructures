@@ -12,7 +12,7 @@ import XCTest
 class InfixNotationEvaluatorTest: XCTestCase {
     
     func testEvaluateThrowsError() {
-        var evaluator =                      InfixNotationEvaluator(stringRepresentation: "2*5*10*")
+        var evaluator = InfixNotationEvaluator(stringRepresentation: "2*5*10*")
         XCTAssertThrowsError(try evaluator.evaluate())
         
         evaluator = InfixNotationEvaluator(stringRepresentation: "foo")

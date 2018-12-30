@@ -22,6 +22,10 @@ class InfixNotationEvaluator {
 
     func evaluate() throws -> Double {
         let elements = try parse(stringRepresentation: stringRepresentation)
+        if let _ = Operator(rawValue: Substring(elements.back()!)) {
+            throw InfixNotationEvaluatorError.InvalidSyntax
+        }
+        
         return try evaluateExpression(composedOf: elements)
     }
 
@@ -65,13 +69,12 @@ class InfixNotationEvaluator {
         var current: String = ""
         try stringRepresentation.forEach { (character: Character) in
             if let op = Operator(rawValue: Substring(String(character))) {
-                if current.isEmpty {
-                    throw InfixNotationEvaluatorError.InvalidSyntax
-                } else {
+                if !current.isEmpty {
                     queue.pushToBack(value: current)
-                    queue.pushToBack(value: String(op.rawValue))
-                    current = ""
                 }
+                
+                queue.pushToBack(value: String(op.rawValue))
+                current = ""
             } else if character == "." {
                 current.append(character)
             } else {
@@ -85,11 +88,6 @@ class InfixNotationEvaluator {
         
         if !current.isEmpty {
             queue.pushToBack(value: current)
-        }
-
-        let last = queue.back()
-        if let last = last, let _ = Operator(rawValue: Substring(last)) {
-            throw InfixNotationEvaluatorError.InvalidSyntax
         }
 
         return queue

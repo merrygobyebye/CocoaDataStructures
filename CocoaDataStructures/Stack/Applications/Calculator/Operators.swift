@@ -13,4 +13,6 @@ enum Operator: Substring {
     case subtraction = "-"
     case multiplication = "*"
     case division = "/"
+    case openParenthesis = "("
+    case closeParenthesis = ")"
 }

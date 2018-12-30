@@ -61,6 +61,8 @@ class ReversePolishNotationEvaluator {
                 result = first * second
             case .subtraction:
                 result = first - second
+            default:
+                throw ReversePolishNotationEvaluationError.InvalidSyntax
             }
             
             stack.push(String(result))

@@ -106,4 +106,16 @@ class LinkedDeque<T> where T: Copying {
     func back() -> T? {
         return tail?.pointee.value
     }
+    
+    func debugPrint() {
+        print("---Front---")
+        
+        var item = head.pointee.next
+        while item != nil {
+            print(String(describing: item?.pointee.value.debugDescription))
+            item = item?.pointee.next
+        }
+        
+        print("---Back----")
+    }
 }
