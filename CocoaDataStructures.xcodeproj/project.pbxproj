@@ -108,6 +108,7 @@
 			children = (
 				07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */,
 				07A5533921D7346D00A549BD /* LinkedDeque.swift */,
+				07A5534A21D980CD00A549BD /* Applications */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -117,6 +118,7 @@
 			children = (
 				0705D5D721B465E500BF9465 /* MinHeapPriorityQueueTest.swift */,
 				07A5533B21D73A0100A549BD /* LinkedQueueTest.swift */,
+				07A5534C21D980F000A549BD /* Applications */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -133,9 +135,7 @@
 		0705D5DB21B4667600BF9465 /* Applications */ = {
 			isa = PBXGroup;
 			children = (
-				0705D5DC21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift */,
-				07A5534321D8321700A549BD /* InfixNotationEvaluatorTest.swift */,
-				07A5534721D96BB200A549BD /* ParenthesesInfixNotationEvaluatorTest.swift */,
+				07A5534E21D9811100A549BD /* Calculator */,
 				0705D5E021B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift */,
 				0705D5E421B638FC00BF9465 /* PathnameNormalizerTest.swift */,
 			);
@@ -146,8 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				0705D5D021A65A9500BF9465 /* ReversePolishNotationEvaluator.swift */,
-				07A5533421D729F800A549BD /* InfixNotationEvaluator.swift */,
-				07A5534521D9619000A549BD /* ParenthesesInfixNotationEvaluator.swift */,
 				07A5533721D72A4100A549BD /* Operators.swift */,
 			);
 			path = Calculator;
@@ -159,6 +157,48 @@
 				07A5534121D7642300A549BD /* Protocols.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		07A5534A21D980CD00A549BD /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				07A5534B21D980DC00A549BD /* Calculator */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		07A5534B21D980DC00A549BD /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				07A5533421D729F800A549BD /* InfixNotationEvaluator.swift */,
+				07A5534521D9619000A549BD /* ParenthesesInfixNotationEvaluator.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		07A5534C21D980F000A549BD /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				07A5534D21D980F900A549BD /* Calculator */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		07A5534D21D980F900A549BD /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				07A5534321D8321700A549BD /* InfixNotationEvaluatorTest.swift */,
+				07A5534721D96BB200A549BD /* ParenthesesInfixNotationEvaluatorTest.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		07A5534E21D9811100A549BD /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				0705D5DC21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		07AADA83213DCF38003B2B11 = {
