@@ -8,13 +8,6 @@
 
 import UIKit
 
-enum Operator: Substring {
-    case addition = "+"
-    case subtraction = "-"
-    case multiplication = "*"
-    case division = "/"
-}
-
 enum ReversePolishNotationEvaluationError: Error {
     case InvalidSyntax
 }

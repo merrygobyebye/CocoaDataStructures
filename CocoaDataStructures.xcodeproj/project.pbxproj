@@ -15,6 +15,12 @@
 		0705D5E121B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5E021B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift */; };
 		0705D5E321B624CA00BF9465 /* PathnameNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5E221B624C900BF9465 /* PathnameNormalizer.swift */; };
 		0705D5E521B638FC00BF9465 /* PathnameNormalizerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0705D5E421B638FC00BF9465 /* PathnameNormalizerTest.swift */; };
+		07A5533521D729F800A549BD /* InfixNotationEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5533421D729F800A549BD /* InfixNotationEvaluator.swift */; };
+		07A5533821D72A4100A549BD /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5533721D72A4100A549BD /* Operators.swift */; };
+		07A5533A21D7346D00A549BD /* LinkedDeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5533921D7346D00A549BD /* LinkedDeque.swift */; };
+		07A5533C21D73A0100A549BD /* LinkedQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5533B21D73A0100A549BD /* LinkedQueueTest.swift */; };
+		07A5534221D7642300A549BD /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5534121D7642300A549BD /* Protocols.swift */; };
+		07A5534421D8321800A549BD /* InfixNotationEvaluatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5534321D8321700A549BD /* InfixNotationEvaluatorTest.swift */; };
 		07AADA97213DCF38003B2B11 /* CocoaDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */; };
 		07AADA9E213DCF38003B2B11 /* CocoaDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */; };
@@ -40,6 +46,12 @@
 		0705D5E021B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellFormedParenthesesEvaluatorTest.swift; sourceTree = "<group>"; };
 		0705D5E221B624C900BF9465 /* PathnameNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathnameNormalizer.swift; sourceTree = "<group>"; };
 		0705D5E421B638FC00BF9465 /* PathnameNormalizerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathnameNormalizerTest.swift; sourceTree = "<group>"; };
+		07A5533421D729F800A549BD /* InfixNotationEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfixNotationEvaluator.swift; sourceTree = "<group>"; };
+		07A5533721D72A4100A549BD /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		07A5533921D7346D00A549BD /* LinkedDeque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedDeque.swift; sourceTree = "<group>"; };
+		07A5533B21D73A0100A549BD /* LinkedQueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedQueueTest.swift; sourceTree = "<group>"; };
+		07A5534121D7642300A549BD /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		07A5534321D8321700A549BD /* InfixNotationEvaluatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfixNotationEvaluatorTest.swift; sourceTree = "<group>"; };
 		07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaDataStructures.h; sourceTree = "<group>"; };
 		07AADA91213DCF38003B2B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +83,7 @@
 		0705D5D221B4653200BF9465 /* Applications */ = {
 			isa = PBXGroup;
 			children = (
-				0705D5D021A65A9500BF9465 /* ReversePolishNotationEvaluator.swift */,
+				07A5533621D72A2300A549BD /* Calculator */,
 				0705D5DE21B46B3600BF9465 /* WellFormedParenthesesEvaluator.swift */,
 				0705D5E221B624C900BF9465 /* PathnameNormalizer.swift */,
 			);
@@ -91,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */,
+				07A5533921D7346D00A549BD /* LinkedDeque.swift */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -99,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				0705D5D721B465E500BF9465 /* MinHeapPriorityQueueTest.swift */,
+				07A5533B21D73A0100A549BD /* LinkedQueueTest.swift */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -116,10 +130,29 @@
 			isa = PBXGroup;
 			children = (
 				0705D5DC21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift */,
+				07A5534321D8321700A549BD /* InfixNotationEvaluatorTest.swift */,
 				0705D5E021B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift */,
 				0705D5E421B638FC00BF9465 /* PathnameNormalizerTest.swift */,
 			);
 			path = Applications;
+			sourceTree = "<group>";
+		};
+		07A5533621D72A2300A549BD /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				0705D5D021A65A9500BF9465 /* ReversePolishNotationEvaluator.swift */,
+				07A5533421D729F800A549BD /* InfixNotationEvaluator.swift */,
+				07A5533721D72A4100A549BD /* Operators.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		07A5534021D7641600A549BD /* General */ = {
+			isa = PBXGroup;
+			children = (
+				07A5534121D7642300A549BD /* Protocols.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		07AADA83213DCF38003B2B11 = {
@@ -144,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */,
+				07A5534021D7641600A549BD /* General */,
 				0705D5D421B4657600BF9465 /* Queue */,
 				0705D5D321B4654F00BF9465 /* Stack */,
 				07AADA91213DCF38003B2B11 /* Info.plist */,
@@ -271,7 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A5533A21D7346D00A549BD /* LinkedDeque.swift in Sources */,
+				07A5533521D729F800A549BD /* InfixNotationEvaluator.swift in Sources */,
 				0705D5E321B624CA00BF9465 /* PathnameNormalizer.swift in Sources */,
+				07A5534221D7642300A549BD /* Protocols.swift in Sources */,
+				07A5533821D72A4100A549BD /* Operators.swift in Sources */,
 				07BC758021991BD200CA372A /* ArrayStack.swift in Sources */,
 				0705D5DF21B46B3600BF9465 /* WellFormedParenthesesEvaluator.swift in Sources */,
 				07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */,
@@ -283,10 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A5534421D8321800A549BD /* InfixNotationEvaluatorTest.swift in Sources */,
 				0705D5D821B465E500BF9465 /* MinHeapPriorityQueueTest.swift in Sources */,
 				0705D5E121B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift in Sources */,
 				0705D5E521B638FC00BF9465 /* PathnameNormalizerTest.swift in Sources */,
 				0705D5DD21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift in Sources */,
+				07A5533C21D73A0100A549BD /* LinkedQueueTest.swift in Sources */,
 				0705D5DA21B4664500BF9465 /* ArrayStackTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
