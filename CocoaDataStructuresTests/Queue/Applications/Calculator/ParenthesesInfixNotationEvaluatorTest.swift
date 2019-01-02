@@ -54,7 +54,10 @@ class ParenthesesInfixNotationEvaluatorTest: XCTestCase {
     }
     
     func testEvaluateWithOrderOfOperationsAndParentheses() {
-        let evaluator = ParenthesesInfixNotationEvaluator(stringRepresentation: "2*((3+5*2)*((4+8)-(8-3)))*8")
+        var evaluator = ParenthesesInfixNotationEvaluator(stringRepresentation: "2*((3+5*2)*((4+8)-(8-3)))*8")
         XCTAssertEqual(1456, try evaluator.evaluate())
+        
+        evaluator = ParenthesesInfixNotationEvaluator(stringRepresentation: "((4-2)/((3-8)*(2+3)-3)*5)")
+        XCTAssertEqual(-0.3571428571, try evaluator.evaluate(), accuracy: 0.0000000001)
     }
 }
