@@ -94,10 +94,3 @@ class InfixNotationEvaluator {
     }
     
 }
-
-extension String: Copying {
-    
-    func makeCopy() -> String {
-        return String(self)
-    }
-}

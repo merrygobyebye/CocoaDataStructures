@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LinkedDeque<T> where T: Copying {
+class LinkedDeque<T> {
     
     private class Node {
         var prev: UnsafeMutablePointer<Node>?
@@ -16,7 +16,7 @@ class LinkedDeque<T> where T: Copying {
         var value: T?
         
         init(value: T?) {
-            self.value = value != nil ? value?.makeCopy() : nil
+            self.value = value
         }
     }
     
@@ -53,7 +53,7 @@ class LinkedDeque<T> where T: Copying {
             tail = node
             tail?.pointee.prev = head
         } else {
-            head.pointee.value = value.makeCopy()
+            head.pointee.value = value
             let first = head
             head = UnsafeMutablePointer<Node>.allocate(capacity: 1)
             head.initialize(to: Node(value: nil))

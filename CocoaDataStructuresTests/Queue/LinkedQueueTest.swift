@@ -59,5 +59,4 @@ class LinkedQueueTest: XCTestCase {
         XCTAssertEqual(queue.count, 0)
         XCTAssertNil(queue.front())
     }
-
 }
