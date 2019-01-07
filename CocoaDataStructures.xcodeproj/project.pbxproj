@@ -32,6 +32,8 @@
 		07A5537E21DF198F00A549BD /* IncreasingDepthOrderTreeNodeValuesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5537D21DF198F00A549BD /* IncreasingDepthOrderTreeNodeValuesTest.swift */; };
 		07A5538021E1BFC000A549BD /* CircularQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5537F21E1BFC000A549BD /* CircularQueue.swift */; };
 		07A5538221E1D16400A549BD /* CircularQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5538121E1D16400A549BD /* CircularQueueTest.swift */; };
+		07A5538421E2ED9900A549BD /* StackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5538321E2ED9900A549BD /* StackQueue.swift */; };
+		07A5538621E2F2F400A549BD /* StackQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5538521E2F2F400A549BD /* StackQueueTest.swift */; };
 		07AADA97213DCF38003B2B11 /* CocoaDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */; };
 		07AADA9E213DCF38003B2B11 /* CocoaDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */; };
@@ -74,6 +76,8 @@
 		07A5537D21DF198F00A549BD /* IncreasingDepthOrderTreeNodeValuesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreasingDepthOrderTreeNodeValuesTest.swift; sourceTree = "<group>"; };
 		07A5537F21E1BFC000A549BD /* CircularQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularQueue.swift; sourceTree = "<group>"; };
 		07A5538121E1D16400A549BD /* CircularQueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularQueueTest.swift; sourceTree = "<group>"; };
+		07A5538321E2ED9900A549BD /* StackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackQueue.swift; sourceTree = "<group>"; };
+		07A5538521E2F2F400A549BD /* StackQueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackQueueTest.swift; sourceTree = "<group>"; };
 		07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaDataStructures.h; sourceTree = "<group>"; };
 		07AADA91213DCF38003B2B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 				07A5533921D7346D00A549BD /* LinkedDeque.swift */,
 				07A5537721DF09B700A549BD /* LinkedQueue.swift */,
 				07A5537F21E1BFC000A549BD /* CircularQueue.swift */,
+				07A5538321E2ED9900A549BD /* StackQueue.swift */,
 				07A5534A21D980CD00A549BD /* Applications */,
 			);
 			path = Queue;
@@ -141,6 +146,7 @@
 				07A5533B21D73A0100A549BD /* LinkedDequeTest.swift */,
 				07A5537921DF0C9500A549BD /* LinkedQueueTest.swift */,
 				07A5538121E1D16400A549BD /* CircularQueueTest.swift */,
+				07A5538521E2F2F400A549BD /* StackQueueTest.swift */,
 				07A5534C21D980F000A549BD /* Applications */,
 			);
 			path = Queue;
@@ -416,6 +422,7 @@
 				0705D5E321B624CA00BF9465 /* PathnameNormalizer.swift in Sources */,
 				07A5534621D9619000A549BD /* ParenthesesInfixNotationEvaluator.swift in Sources */,
 				07A5534221D7642300A549BD /* Protocols.swift in Sources */,
+				07A5538421E2ED9900A549BD /* StackQueue.swift in Sources */,
 				07A5536E21DC7F6500A549BD /* EastToWestSunsetViewCalculator.swift in Sources */,
 				07A5533821D72A4100A549BD /* Operators.swift in Sources */,
 				07BC758021991BD200CA372A /* ArrayStack.swift in Sources */,
@@ -435,6 +442,7 @@
 				07A5537A21DF0C9500A549BD /* LinkedQueueTest.swift in Sources */,
 				07A5534421D8321800A549BD /* InfixNotationEvaluatorTest.swift in Sources */,
 				0705D5D821B465E500BF9465 /* MinHeapPriorityQueueTest.swift in Sources */,
+				07A5538621E2F2F400A549BD /* StackQueueTest.swift in Sources */,
 				0705D5E121B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift in Sources */,
 				0705D5E521B638FC00BF9465 /* PathnameNormalizerTest.swift in Sources */,
 				0705D5DD21B466A300BF9465 /* ReversePolishNotationEvaluatorTest.swift in Sources */,
