@@ -35,6 +35,10 @@
 		07A5538621E2F2F400A549BD /* StackQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5538521E2F2F400A549BD /* StackQueueTest.swift */; };
 		07A5538821E3100500A549BD /* MaxLinkedQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5538721E3100500A549BD /* MaxLinkedQueue.swift */; };
 		07A5538A21E3112500A549BD /* MaxLinkedQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5538921E3112500A549BD /* MaxLinkedQueueTest.swift */; };
+		07A5539221FAAE3900A549BD /* AdvancingThroughArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5539121FAAE3900A549BD /* AdvancingThroughArray.swift */; };
+		07A5539821FAB36700A549BD /* AdvancingThroughArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5539721FAB36700A549BD /* AdvancingThroughArrayTest.swift */; };
+		07A5539A21FAC12F00A549BD /* RemoveDuplicatesFromSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5539921FAC12F00A549BD /* RemoveDuplicatesFromSortedArray.swift */; };
+		07A5539C21FAEF2200A549BD /* RemoveDeplicatesFromSortedArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5539B21FAEF2200A549BD /* RemoveDeplicatesFromSortedArrayTest.swift */; };
 		07AADA97213DCF38003B2B11 /* CocoaDataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */; };
 		07AADA9E213DCF38003B2B11 /* CocoaDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07AADAA8213DCF87003B2B11 /* MinHeapPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AADAA7213DCF87003B2B11 /* MinHeapPriorityQueue.swift */; };
@@ -80,6 +84,10 @@
 		07A5538521E2F2F400A549BD /* StackQueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackQueueTest.swift; sourceTree = "<group>"; };
 		07A5538721E3100500A549BD /* MaxLinkedQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLinkedQueue.swift; sourceTree = "<group>"; };
 		07A5538921E3112500A549BD /* MaxLinkedQueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLinkedQueueTest.swift; sourceTree = "<group>"; };
+		07A5539121FAAE3900A549BD /* AdvancingThroughArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancingThroughArray.swift; sourceTree = "<group>"; };
+		07A5539721FAB36700A549BD /* AdvancingThroughArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancingThroughArrayTest.swift; sourceTree = "<group>"; };
+		07A5539921FAC12F00A549BD /* RemoveDuplicatesFromSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicatesFromSortedArray.swift; sourceTree = "<group>"; };
+		07A5539B21FAEF2200A549BD /* RemoveDeplicatesFromSortedArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDeplicatesFromSortedArrayTest.swift; sourceTree = "<group>"; };
 		07AADA8D213DCF38003B2B11 /* CocoaDataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaDataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaDataStructures.h; sourceTree = "<group>"; };
 		07AADA91213DCF38003B2B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -260,6 +268,40 @@
 			path = Applications;
 			sourceTree = "<group>";
 		};
+		07A5538F21FAAE0700A549BD /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				07A5539021FAAE1400A549BD /* Applications */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		07A5539021FAAE1400A549BD /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				07A5539121FAAE3900A549BD /* AdvancingThroughArray.swift */,
+				07A5539921FAC12F00A549BD /* RemoveDuplicatesFromSortedArray.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		07A5539321FAB2A700A549BD /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				07A5539421FAB2AC00A549BD /* Applications */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		07A5539421FAB2AC00A549BD /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				07A5539721FAB36700A549BD /* AdvancingThroughArrayTest.swift */,
+				07A5539B21FAEF2200A549BD /* RemoveDeplicatesFromSortedArrayTest.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
 		07AADA83213DCF38003B2B11 = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				07AADA90213DCF38003B2B11 /* CocoaDataStructures.h */,
+				07A5538F21FAAE0700A549BD /* Array */,
 				0705D5D421B4657600BF9465 /* Queue */,
 				0705D5D321B4654F00BF9465 /* Stack */,
 				07A5537121DF067400A549BD /* Binary Tree */,
@@ -293,6 +336,7 @@
 		07AADA9A213DCF38003B2B11 /* CocoaDataStructuresTests */ = {
 			isa = PBXGroup;
 			children = (
+				07A5539321FAB2A700A549BD /* Array */,
 				0705D5D521B465B000BF9465 /* Queue */,
 				0705D5D621B465B800BF9465 /* Stack */,
 				07A5537B21DF195300A549BD /* Binary Tree */,
@@ -415,8 +459,10 @@
 				07A5533A21D7346D00A549BD /* LinkedDeque.swift in Sources */,
 				07A5533521D729F800A549BD /* InfixNotationEvaluator.swift in Sources */,
 				0705D5E321B624CA00BF9465 /* PathnameNormalizer.swift in Sources */,
+				07A5539221FAAE3900A549BD /* AdvancingThroughArray.swift in Sources */,
 				07A5534621D9619000A549BD /* ParenthesesInfixNotationEvaluator.swift in Sources */,
 				07A5538421E2ED9900A549BD /* StackQueue.swift in Sources */,
+				07A5539A21FAC12F00A549BD /* RemoveDuplicatesFromSortedArray.swift in Sources */,
 				07A5538821E3100500A549BD /* MaxLinkedQueue.swift in Sources */,
 				07A5536E21DC7F6500A549BD /* EastToWestSunsetViewCalculator.swift in Sources */,
 				07A5533821D72A4100A549BD /* Operators.swift in Sources */,
@@ -436,7 +482,9 @@
 			files = (
 				07A5537A21DF0C9500A549BD /* LinkedQueueTest.swift in Sources */,
 				07A5534421D8321800A549BD /* InfixNotationEvaluatorTest.swift in Sources */,
+				07A5539821FAB36700A549BD /* AdvancingThroughArrayTest.swift in Sources */,
 				0705D5D821B465E500BF9465 /* MinHeapPriorityQueueTest.swift in Sources */,
+				07A5539C21FAEF2200A549BD /* RemoveDeplicatesFromSortedArrayTest.swift in Sources */,
 				07A5538621E2F2F400A549BD /* StackQueueTest.swift in Sources */,
 				0705D5E121B4743C00BF9465 /* WellFormedParenthesesEvaluatorTest.swift in Sources */,
 				07A5538A21E3112500A549BD /* MaxLinkedQueueTest.swift in Sources */,
