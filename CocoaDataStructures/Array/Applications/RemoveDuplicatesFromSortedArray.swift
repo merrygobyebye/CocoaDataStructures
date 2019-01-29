@@ -15,35 +15,24 @@ extension Array where Element == Int {
         
         guard self.count > 1 else { return }
         
-        var currentValue = self[0]
         var currentIndex = 1
-        var swapIndex: Int?
-
+        var swapIndex = 0
+        
         while currentIndex < self.count {
-           
-            if swapIndex != nil {
-                self[swapIndex!] = currentValue
-                swapIndex = swapIndex! + 1
-            }
-            
-            if self[currentIndex] == currentValue {
-                swapIndex = swapIndex ?? currentIndex
-                while currentIndex < self.count && self[currentIndex] == currentValue {
-                    currentIndex += 1
-                }
-                
-                if currentIndex < self.count {
-                    currentValue = self[currentIndex]
+            // duplicate value detected
+            if self[currentIndex] == self[currentIndex - 1] || swapIndex != 0 && self[currentIndex] == self[swapIndex - 1] {
+                swapIndex = swapIndex == 0 ? currentIndex : swapIndex
+                while self[currentIndex] == self[currentIndex - 1] || swapIndex != 0 && self[currentIndex] == self[swapIndex - 1] {
                     currentIndex += 1
                 }
             } else {
-                currentValue = self[currentIndex]
+                // not a duplicate, but a previous duplicate was found, so shift forward
+                if swapIndex != 0 {
+                    self[swapIndex] = self[currentIndex]
+                    swapIndex += 1
+                }
                 currentIndex += 1
             }
-        }
-        
-        if swapIndex != nil {
-            self[swapIndex!] = self.last!
         }
     }
 }
